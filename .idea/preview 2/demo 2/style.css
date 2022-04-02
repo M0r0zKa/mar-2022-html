@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+
+}
+
+
+.wrap {
+    height: 800px;
+    background: silver;
+
+}
+
+h2 {
+    margin: 0;
+}
+
+.box {
+    background: cornflowerblue;
+    width: 300px;
+    height: 200px;
+    /*margin: 10px;*/
+    margin-right: calc(15% - 150px);
+    margin-left: calc(15% - 150px);
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.xxx{
+    display: flex;
+}
+.xxx > p {
+    margin: 0%;
+}

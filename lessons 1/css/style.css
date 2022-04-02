@@ -1,0 +1,63 @@
+body {
+    background: #fdca00;
+}
+img{
+    width: 400px;
+}
+h1  {
+    display: flex;
+    justify-content: center;
+    background: #fdca00;
+    color: dodgerblue;
+    text-align: center;
+    border: 3px solid darkgreen;
+    border-radius: 10px 10px 10px 10px ;
+    width: 30%;
+    margin-left: 35%;
+}
+a{
+    color: white;
+
+}
+
+
+
+p {
+    background: #ffffff;
+    text-align: center;
+    justify-content: flex-end;
+    display: flex;
+
+
+}
+img {
+    width: 400px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 200px;
+    justify-content: flex-start;
+
+
+}
+h2  {
+    background: #fdca00;
+    text-align: center;
+    color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: 3px solid red;
+
+}
+a{
+    color: dodgerblue;
+}
+
+ul {
+    background: blue;
+    color: white;
+    text-align: left;
+    border-radius: 10px;
+    border: 3px dashed yellow;
+}
+

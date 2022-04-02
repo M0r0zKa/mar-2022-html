@@ -1,0 +1,51 @@
+body{
+    background: deepskyblue;
+}
+h1{
+    background: deepskyblue;
+    color: orange;
+    text-align: center;
+    margin: 3px ;
+    display: block;
+    border: 3px black solid;
+    border-radius: 10px 10px 10px 10px;
+}
+img {
+    display: block;
+    max-width: 200px;
+    border: 1px black solid;
+    background: white;
+    margin-left: 40%;
+
+}
+
+h2{
+    background: blue;
+
+}
+h2{
+    display: block;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px black solid;
+}
+a{
+    color: white;
+    display: block;
+    text-align: center;
+}
+p{
+    display: block;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 0px 10px 0px 10px;
+
+}
+ul{
+    display: block;
+    background: orange;
+    color: forestgreen;
+    text-align-all: center;
+    width: 50%;
+    border-radius: 0px 10px 0px 10px;
+}
