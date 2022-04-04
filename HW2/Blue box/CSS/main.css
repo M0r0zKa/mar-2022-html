@@ -1,0 +1,57 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+
+}
+
+.blue-box{
+    height: 100%;
+    width: 50%;
+    border: 2px solid red;
+}
+.widgets{
+    height: 25%;
+    background: blue;
+    border: 2px solid red;
+
+}
+.BigW{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.BW{
+    display: flex;
+    background: #007dc7;
+    width: calc(100%/3);
+    height: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+    border: 2px solid red;
+}
+.contact{
+    height: 50%;
+    background: blue;
+    border: 2px solid red;
+}
+.txt{
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+
