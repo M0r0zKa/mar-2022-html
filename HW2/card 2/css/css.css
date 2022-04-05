@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
 
+
 }
 
 .h3 {
@@ -23,18 +24,19 @@ body {
 
 .box {
     height: 400px;
-    width: 100%;
     display: flex;
     justify-content: center;
     /*background: silver;*/
     /*border: 1px solid black;*/
+    flex-wrap: wrap;
+
+
+
 
 
 }
 
-.H1 {
 
-}
 
 .box2 {
     display: flex;
