@@ -46,7 +46,8 @@ body {
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
-    /*border: 1px solid black;*/
+    border-left: 1px solid lightgray;
+    border-top: 1px solid lightgray;
     box-shadow: 10px 5px 5px 3px gray;
 
 }
@@ -78,6 +79,8 @@ justify-content: center;
     justify-items: center;
     align-items: center;
     background: #35cd9f;
+    box-shadow: 2px 2px 2px 2px gray;
+
 }
 .service{
     margin: 0;
