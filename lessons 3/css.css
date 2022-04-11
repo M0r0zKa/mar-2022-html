@@ -1,0 +1,57 @@
+/*
+div.sector-1  ul > li {
+    background: silver;
+}
+!*div.sector-1 > div > ul > li{
+    background: red;
+}*!
+
+div.sector-1 li{
+    color: white;
+}
+
+!*ul > li {
+    background: blue;
+}*!
+
+div.sector-1 ul > li:nth-child(2n+1) {
+    color: red;
+}
+
+div > ul >  li:hover    {
+    background: purple;
+    transition: 300ms;
+
+}
+*/
+
+a:visited {
+    color: blue;
+
+}
+
+*:focus {
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+div > ul > li {
+    list-style: none;
+}
+
+li:before {
+    content: '';
+    display: inline-block;
+    background: url("https://static.wikia.nocookie.net/simpsons/images/6/65/Bart_Simpson.png");
+    height: 10px;
+    width: 10px;
+    background-size: cover;
+}
+
+li:after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url("https://static.wikia.nocookie.net/simpsons/images/6/65/Bart_Simpson.png");
+    background-size: cover;
+}

@@ -1,0 +1,37 @@
+.card {
+    height: 200px;
+    width: 150px;
+    background: silver;
+    margin-top: 100px;
+    position: relative;
+
+}
+
+.round {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: blue;
+    position: absolute;
+    top: -20px;
+    left: calc( 150px / 2 - 20px);
+}
+
+
+.box-1  {
+    height: 200px;
+    width: 200px;
+    background: silver;
+    position: absolute;
+    z-index: 3;
+    position: relative;
+
+}
+.box-2{
+    height: 300px;
+    width: 300px;
+    background: coral;
+    position: absolute;
+    z-index: 2;
+    position: relative;
+}
