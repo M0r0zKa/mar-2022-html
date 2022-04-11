@@ -1,0 +1,69 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+
+}
+
+.bigbox {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+}
+
+.head {
+    width: 100%;
+    height: 33%;
+    background: orange;
+
+}
+
+.wraw {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bcd {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 100%;
+    width: 67%;
+    flex-wrap: wrap;
+}
+
+.a, .b, .c, .d, .e, .f, .g {
+    height: 50%;
+    width: 33.33334%;
+    background: linear-gradient(45deg, blue, yellow);
+
+
+}
+
+.h {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    background: slateblue;
+
+}
+
