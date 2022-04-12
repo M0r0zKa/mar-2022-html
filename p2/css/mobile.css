@@ -1,0 +1,65 @@
+@media screen and (max-width: 1360px) {
+    .midl {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .nav {
+        width: 100%;
+        height: 10%;
+    }
+
+    .bigbox {
+        width: 100%;
+        height: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+    }
+
+    .bigbox-box {
+        justify-content: center;
+        width: 100%;
+        height: 30%;
+
+    }
+
+    .bath {
+        width: 70%;
+        height: 100%;
+    }
+
+    .ad {
+        width: 30%;
+        height: 100%;
+    }
+
+    .types {
+        width: 100%;
+        height: 40%;
+    }
+
+    .related {
+        width: 100%;
+        height: 40%;
+
+    }
+
+    .minibox {
+        width: 100%;
+        height: 10%;
+
+        position: static;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .store , .tools{
+        width: 50%;
+        height: 100%;
+    }
+
+
+
+}
