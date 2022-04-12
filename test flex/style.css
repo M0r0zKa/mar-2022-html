@@ -1,61 +1,78 @@
-body{
-    margin: 0;
+.big{
+    height: 1300px;
+    width: 1000px;
+    background: silver;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    justify-items: center;
+    flex-wrap: wrap;
 }
-.blue-box{
-    height: 950px;
-    width: 500px;
-    background-color: #35cd9f;
-    display: block;
-}
-.widgets{
-    height: 300px;
-    background-color: firebrick;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    text-align: center;
-    margin: 10px;
-}
-.height-widgets{
-    height: 300px;
-    background-color: chocolate;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-}
-.box{
-    height: 100%;
-    width: calc(100%/3);
-    background-color: #0f0f4f;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 40px;
-    border: 2px solid white;
+.box1{
+    height: 1000px;
+    width: 300px;
+    background: #fdca00;
+    order: 1;
 
 }
-.txt{
-    color: #ffffff;
-    font-family: "Times New Roman";
-    text-align: center;
-    width: 80%;
-}
-.contact{
-    height: 300px;
-    background-color: firebrick;
-    justify-content: center;
-    align-items: center;
+.box2{
+    height: 400px;
+    width: 700px;
     display: flex;
-    text-align: center;
-    margin: 10px;
+    justify-content: start;
+    flex-wrap: wrap;
+    order: 2;
 }
-.txt-main{
-    color: #ffffff;
-    font-family: "Times New Roman";
-    text-align: center;
-    width: 100%;
-    font-size: 20px;
+.bath{
+    display: block;
+    height: 400px;
+    width: 400px;
+    background: blueviolet;
 }
+.ad{
+    display: block;
+    height: 400px;
+    width: 300px;
+    background: red;
+}
+.type{
+    height: 900px;
+    width: 700px;
+    display: block;
+    background: #35cd9f;
+}
+
+.box3   {
+    height: 300px;
+    width: 300px;
+    background: blue;
+    position: relative;
+    display: inline-block;
+    top: -300px;
+    order: 3;
+}
+
+.store{
+    height: 150px;
+    width: 300px;
+    background: purple;
+}
+.tools{
+    height: 150px;
+    width: 300px;
+    background: dodgerblue;
+}
+
+@media screen and (max-width: 1360px) {
+
+.box1{
+    order: 1;
+    height: 300px;
+    width: 1000px;
+}
+    .box2{
+        height: 400px;
+
+    }
+
+}
+

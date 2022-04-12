@@ -16,15 +16,31 @@ div {
     justify-content: center;
     font-size: 30px;
 
+
 }
 
-.bigbox {
+div.bg{
+
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: start;
-    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    background: gray;
+    background-size: 100% auto;
+
+}
+
+.bg{
+    align-items: center;
+}
+
+.bigbox {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -33,10 +49,11 @@ div {
     height: 33%;
     background: orange;
 
+
 }
 
 .wraw {
-    height: 100%;
+    height: 67%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -44,17 +61,21 @@ div {
 
 .bcd {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
     height: 100%;
     width: 67%;
     flex-wrap: wrap;
+
 }
 
 .a, .b, .c, .d, .e, .f, .g {
     height: 50%;
-    width: 33.33334%;
+    width: 33.33%;
     background: linear-gradient(45deg, blue, yellow);
+    box-sizing: border-box;
+
+
 
 
 }

@@ -1,0 +1,142 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.body
+{
+    width: 100%;
+    height: 100%;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 80%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.head{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+.logo   {
+    width: calc(20% - 5px);
+    height: calc(100% - 5px);
+    background: cornflowerblue;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.header{
+    width: calc(80% - 5px);
+    height: calc(100% - 5px);
+    background: cornflowerblue;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.bigbox{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: start;
+    justify-items: start;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+
+.box1{
+    width: calc(20% - 5px);
+    height: calc(100% - 10px);
+
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 5px;
+}
+
+.nav{
+    width: 100%;
+    height: calc(65% - 5px);
+    background: slateblue;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.store{
+    width: 100%;
+    height: calc(15% - 5px);
+    background: #fdca00;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.tools{
+    width: 100%;
+    height: calc(20% - 5px);
+    background: coral;
+    margin-top: px;
+}
+
+.box2{
+    width: calc(60% - 5px);
+    height: calc(100% - 10px);
+    margin-left: 5px;
+}
+
+.bath{
+    width: calc(100% - 5px);
+    height: calc(30% - 5px);
+    background: #007dc7;
+    margin-top: 6px ;
+}
+
+.types{
+    width: calc(100% - 5px);
+    height: calc(70% - 5px);
+    background: blueviolet;
+    margin-top: 5px;
+}
+
+.ad{
+    width: 100%;
+    height: calc(30% - 5px);
+    background: #007dc7;
+    margin-top: 6px ;
+}
+
+.related{
+    width: 100%;
+    height: calc(70% - 5px);
+    background: #fdca00;
+    margin-top: 5px;
+}
+.too{
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    height: 20%;
+    background: blueviolet;
+}
+
