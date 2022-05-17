@@ -156,6 +156,68 @@
 
 //
 // -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
+
+class Girl {
+    constructor(name, age, sizeFoot) {
+        this.name = name
+        this.age = age
+        this.sizeFoot = sizeFoot
+    }
+}
+
+let arrGirl = [
+    new Girl('Sveta', 18, 38),
+    new Girl('Lera', 19, 36),
+    new Girl('Anna', 20, 35),
+    new Girl('Sveta', 18, 40),
+    new Girl('Lera', 19, 34),
+    new Girl('Anna', 20, 36.5),
+    new Girl('Sveta', 18, 39.5),
+    new Girl('Lera', 19, 40.5),
+    new Girl('Anna', 20, 39),
+    new Girl('Anna', 20, 35.5)
+];
+// console.log(arrGirl);
+
+
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
+
+class Prince {
+    constructor(name, age, sizeFoot) {
+        this.name = name
+        this.age = age
+        this.sizeFoot = sizeFoot
+    }
+}
+
+let newPrince = new Prince('Vlad', 25, 38);
+
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+
+let find = (arr, prince) => {
+    for (const girl of arr) {
+        if (girl.sizeFoot === prince.sizeFoot) {
+            return girl.name
+        }
+    }
+}
+
+console.log(find(arrGirl, newPrince));
+
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+
+let findErow = arrGirl.find((value) => {
+   return  value.sizeFoot === newPrince.sizeFoot
+});
+let test =(arr) => {
+    let key = [];
+    let data = []
+    for (const item in arr) {
+        key.push(item)
+        data.unshift(`${arr[item]}`)
+
+    }
+    console.log(data);
+    return key;
+}
+console.log(test(findErow));

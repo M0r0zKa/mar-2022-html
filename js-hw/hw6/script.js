@@ -95,57 +95,122 @@
 // console.log(coursesFiveYear);
 
 
-// описати колоду карт
-
-let cardSuit = ['spade', 'diamond', 'heart', 'clubs'];
-let value = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'ace', 'jack', 'queen', 'king', 'joker'];
-let color = ['red', 'black'];
-let cards = [];
-
-newArray = (arr, csuit, color1, valueCard) => {
-    for (let i = 0,j = 0; i < csuit.length; i++, j++) {
-
-        if (csuit[j] === 'spade' || csuit[j] === 'clubs') {
-            for (let j = 0; j < valueCard.length-1; j++) {
-                arr.push({suit: cardSuit[i], value: valueCard[j], color: color1[1]})
-
-            }
-        } else {
-            for (let j = 0; j < valueCard.length-1; j++) {
-                arr.push({suit: cardSuit[i], value: valueCard[j], color: color1[0]})
-
-            }
-        }
-    }
-    arr.push({suit: " ", value: valueCard[valueCard.length - 1], color: color1[1]})
-    arr.push({suit: " ", value: valueCard[valueCard.length - 1], color: color1[0]})
-    return cards = arr;
-
-}
-newArray(cards, cardSuit, color, value);
-console.log(cards);
-
-
-
-
-// - знайти піковий туз
-
-console.log(cards.find(value => value.suit === 'clubs' && value.value === 'ace'));
-// - всі шістк
-console.log(cards.filter(value => value.value === '6'));
-// - всі червоні карти
-console.log(cards.filter(value => value.color === 'red'))
-// - всі буби
-console.log(cards.filter(value => value.suit === 'diamond'));;
-// - всі трефи від 9 та більше
-
-console.log(cards.filter(value => value.suit === 'spade' && value.value >= "8" || value.value ==='10' && value.suit === 'clubs'));;
-
+// // описати колоду карт
 //
-// {
-//     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
-//         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
-//     color:'', // 'red','black'
+// let cardSuit = ['spade', 'diamond', 'heart', 'clubs'];
+// let value = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'ace', 'jack', 'queen', 'king', 'joker'];
+// let color = ['red', 'black'];
+// let cards = [];
+//
+// class Card {
+//     constructor(suit,value,color) {
+//         this.suit = suit
+//         this.value = value
+//         this.color = color
+//     }
 // }
+//
+// for (let i = 0 ; i < color.length; i++) {
+//     if (color[i] === 'red') {
+//         // console.log(color[i]);
+//         for (let j = 0; j < cardSuit.length; j++) {
+//             switch (cardSuit[j]) {
+//                 case ('diamond'):
+//                     for (let k = 0; k < value.length; k++) {
+//                         if (value[k] !== 'joker') {
+//                             cards.push(new Card(`${cardSuit[j]}`, `${value[k]}`, `${color[i]}`));
+//                         }
+//                     }
+//                     break
+//                 case ('heart'):
+//                     for (let k = 0; k < value.length; k++) {
+//                         if (value[k] !== 'joker') {
+//                             cards.push(new Card(`${cardSuit[j]}`, `${value[k]}`, `${color[i]}`));
+//                         }
+//                     }
+//                     break;
+//                 default:
+//             }
+//
+//         }
+//     }
+//     else {
+//         console.log(color[i]);
+//         for (let j = 0; j < cardSuit.length; j++) {
+//                 switch (cardSuit[j]){
+//                     case ('diamond'):
+//                         for (let k = 0; k < value.length; k++) {
+//                             if (value[k] !== 'joker') {
+//                                 cards.push(new Card(`${cardSuit[j]}`, `${value[k]}`, `${color[i]}`));
+//                             }
+//                         }
+//                         break
+//                     case ('clubs'):
+//                         for (let k = 0; k < value.length; k++) {
+//                             if (value[k] !== 'joker') {
+//                                 cards.push(new Card(`${cardSuit[j]}`, `${value[k]}`, `${color[i]}`));
+//                             }
+//                         }
+//                         break;
+//                     default:
+//                 }
+//
+//             }
+//     }
+// cards.push(new Card(" ", `${value[value.length-1]}`,`${color[i]}`))
+//
+// }
+//
+// console.log(cards);
+
+
+// newArray = (arr, csuit, color1, valueCard) => {
+//     for (let i = 0,j = 0; i < csuit.length; i++, j++) {
+//
+//         if (csuit[j] === 'spade' || csuit[j] === 'clubs') {
+//             for (let j = 0; j < valueCard.length-1; j++) {
+//                 arr.push({suit: cardSuit[i], value: valueCard[j], color: color1[1]})
+//
+//             }
+//         } else {
+//             for (let j = 0; j < valueCard.length-1; j++) {
+//                 arr.push({suit: cardSuit[i], value: valueCard[j], color: color1[0]})
+//
+//             }
+//         }
+//     }
+//     arr.push({suit: " ", value: valueCard[valueCard.length - 1], color: color1[1]})
+//     arr.push({suit: " ", value: valueCard[valueCard.length - 1], color: color1[0]})
+//     return cards = arr;
+//
+// }
+// newArray(cards, cardSuit, color, value);
+// console.log(cards);
+//
+
+
+
+// // - знайти піковий туз
+//
+// console.log(cards.find(value => value.suit === 'clubs' && value.value === 'ace'));
+// // - всі шістк
+// console.log(cards.filter(value => value.value === '6'));
+// // - всі червоні карти
+// console.log(cards.filter(value => value.color === 'red'))
+// // - всі буби
+// console.log(cards.filter(value => value.suit === 'diamond'));;
+// // - всі трефи від 9 та більше
+//
+// console.log(cards.filter(value => value.suit === 'spade' && value.value >= "8" || value.value ==='10' && value.suit === 'clubs'));;
+//
+// //
+// // {
+// //     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
+// //         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
+// //     color:'', // 'red','black'
+// // }
+
+
+
 
 
