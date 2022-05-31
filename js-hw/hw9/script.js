@@ -169,6 +169,7 @@ let simpsons = [
 // console.log(document.body);
 
 
+/*
 // - Є масив
 let coursesArray = [
     {
@@ -442,69 +443,30 @@ let coursesArray = [
 
 
 document.body.style.margin = 0;
+const divCentr = document.createElement('div')
+document.body.append(divCentr);
+divCentr.classList.add('divCentr')
 const divGod = document.createElement('div')
-divGod.style.width = '1920px';
-divGod.style.height = '1080px';
-document.body.append(divGod);
-divGod.style.display = 'flex';
-divGod.style.flexWrap = 'wrap'
+divGod.classList.add('divGod')
+divCentr.append(divGod);
 for (const divGodElement of coursesArray) {
     const divElement = document.createElement('div');
-    divElement.style.width = '33%';
-    divElement.style.height = '50%';
-    divElement.style.margin = '3px';
-    divElement.style.border = 'solid';
-    divElement.style.display = 'flex';
-    divElement.style.flexWrap = 'wrap'
-    divElement.classList.add('classs')
+    divElement.classList.add('divElements');
     divGod.append(divElement);
     const titl = document.createElement('div');
-    titl.style.height = '15%';
-    titl.style.width = '95%';
-    titl.style.border = 'solid red'
-    titl.style.display = 'flex'
-    titl.style.margin = '3px';
-    titl.style.alignItems = 'center'
-    titl.style.justifyContent = 'center'
+    titl.classList.add('title')
     const divDuration = document.createElement('div');
-    divDuration.style.height = '15%';
-    divDuration.style.width = '95%';
-    divDuration.style.border = 'solid red';
-    divDuration.style.display = 'flex'
-    divDuration.style.flexWrap = 'wrap'
-    divDuration.style.justifyContent = 'space-between'
-    divDuration.style.margin = '3px';
-    divDuration.style.alignItems = 'center'
+    divDuration.classList.add('divDurations')
     const divMonthDuration = document.createElement('div');
-    divMonthDuration.style.width = '23%';
-    divMonthDuration.style.height = '90%';
-    divMonthDuration.style.display = 'flex'
-    divMonthDuration.style.alignItems = 'center'
-    divMonthDuration.style.justifyContent = 'center'
-    divMonthDuration.style.border = 'solid blue'
-    divMonthDuration.style.marginLeft = '5px';
+    divMonthDuration.classList.add('divMonthDurations')
     const divHourDuration = document.createElement('div');
-    divHourDuration.style.width = '73%';
-    divHourDuration.style.height = '90%';
-    divHourDuration.style.display = 'flex'
-    divHourDuration.style.alignItems = 'center'
-    divHourDuration.style.justifyContent = 'center'
-    divHourDuration.style.border = 'solid blue'
-    divHourDuration.style.marginRight = '5px';
+    divHourDuration.classList.add('divHourDurations')
     divDuration.append(divMonthDuration, divHourDuration);
     const divModules = document.createElement('div')
-    divModules.style.height = '65%';
-    divModules.style.width = '95%';
-    divModules.style.border = 'solid red'
-    divModules.style.display = 'flex'
-    divModules.style.flexWrap = 'wrap'
-    divModules.style.justifyContent = 'space-between'
-    divModules.style.margin = '3px';
+    divModules.classList.add(('divModuless'))
     divElement.append(titl, divDuration, divModules)
     const ulModules = document.createElement('ul');
-    ulModules.style.border = 'solid blue'
-    ulModules.style.margin = '3px';
-
+    ulModules.classList.add('ulModuless');
     divModules.append(ulModules)
     titl.innerHTML = `<h1>${divGodElement.title}</h1>`
     divMonthDuration.innerHTML = `<h2>${divGodElement.monthDuration}</h2>`
@@ -518,5 +480,9 @@ for (const divGodElement of coursesArray) {
     }
 
 }
+*/
+
+
+
 
 

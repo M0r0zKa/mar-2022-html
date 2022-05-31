@@ -1,0 +1,45 @@
+
+#posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post {
+    width: 20%;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.body{
+    margin: 0;
+}
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px;
+}
+.inner {
+    width: 19.8%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 1px;
+
+}
+h2{
+    width: 100%;
+
+}
+
+
+ul{
+    border: 1px solid red;
+    margin-left: 2px;
+}
+
+
+
+

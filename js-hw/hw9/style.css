@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.divCentr {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.divGod{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.divElements {
+    width: 500px;
+    height: 500px;
+    margin: 3px;
+    border: solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.title {
+    height: 15%;
+    width: 95%;
+    border: solid red;
+    display: flex;
+    margin: 3px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.divDurations {
+    height: 15%;
+    width: 95%;
+    border: solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3px;
+    align-items: center;
+}
+
+.divMonthDurations {
+    width: 23%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid blue;
+    margin-left: 5px;
+}
+
+.divHourDurations {
+    width: 73%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid blue;
+    margin-right: 5px;
+}
+
+.divModuless {
+    height: 65%;
+    width: 95%;
+    border: solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3px;
+
+}
+.ulModuless{
+    border: solid blue;
+    margin: 3px;
+    flex-wrap: wrap;
+    width: 23%;
+    height: 95%;
+
+}
+
+li{
+    margin-right: 50px;
+
+}
