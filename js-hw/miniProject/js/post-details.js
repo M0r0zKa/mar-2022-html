@@ -35,10 +35,20 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${postObj.id}/comments`)
             divPostComments.appendChild(divPostComment);
             const {postId, id, name, email, body} = commentElement;
             divPostComment.innerHTML = `
+           <div class="p-div"><p><b>body</b></p><p>${body}</p></div>`
+
+            divPostComment.addEventListener('mousedown', function (){
+                divPostComment.innerHTML = ''
+                divPostComment.innerHTML = `
             <div class="post-div">  <div><b>postId</b> ${postId}</div>
             <div><b>id</b>: ${id}</div>
            <div><b>name</b> - ${name}</div>
             <div><b>email</b> - ${email}</p></div></div>
            <div class="p-div"><p><b>body</b></p><p>${body}</p></div>`
+            })
+            divPostComment.addEventListener('mouseup', function (){
+                divPostComment.innerHTML = `<div class="p-div"><p><b>body</b></p><p>${body}</p></div>`
+            })
+
         }
     })

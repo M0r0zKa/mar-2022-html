@@ -39,4 +39,5 @@ fetch(`https://jsonplaceholder.typicode.com/users/${userObj.id}/posts`)
                 button.disabled = true
             }
         }
+
     })

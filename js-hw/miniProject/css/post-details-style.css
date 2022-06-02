@@ -41,6 +41,9 @@
     margin: 5px;
     border-radius: 10px;
 }
+.divPostComment:hover {
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
 .post-div {
     display: flex;
     flex-direction: column;
@@ -48,7 +51,7 @@
     width: 100%;
 }
 .p-div {
-    height: 55%;
+    height: 100%;
     border-top: 1px solid;
     text-align: center;
     background: silver;
