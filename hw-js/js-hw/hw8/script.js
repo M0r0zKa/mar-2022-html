@@ -168,7 +168,7 @@ let classArrr = (arr) => {
             });
     }
     return arrayClass
-}   
+}
 let ar = classArrr(document.body)
 for (const classArrrElement of ar) {
     console.log(classArrrElement);
